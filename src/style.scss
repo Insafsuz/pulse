@@ -71,17 +71,60 @@ a {
   text-decoration: none;
 }
 
-.call {
-}
+.pediatr {
+  background-color: #ebf0ff;
+  background-image: url(/public/images/pediatr-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  &__container {
+    max-width: 1225px;
+    padding-inline: 10px;
+    margin-inline: auto;
+  }
+  &__title {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @media (max-width: 1023px) {
+      flex-direction: column;
+    }
+  }
+  &__img {
+    padding: 12px;
+    background-image: url(/images/about-img-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 
-.call__container {
-  max-width: 1150px;
-  margin-inline: auto;
-  padding-inline: 10px;
+    img {
+      min-width: 374px;
+      width: 374px;
+      height: 374px;
+      border-radius: 50%;
+      @media (max-width: 767px) {
+        min-width: 250px;
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+  &__info {
+    max-width: 750px;
+    p {
+      font-size: 18px;
+      line-height: 35px;
+    }
+  }
 }
-
-.call__title {
-  max-width: 550px;
+.container-isf {
+}
+.title-isf {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -96,50 +139,116 @@ a {
   padding-top: 30px;
   padding-bottom: 10px;
   margin-bottom: 70px;
-  margin-left: 45px;
+  @media (max-width: 767px) {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+}
+.circle-img-isf {
 }
 
-.call__row {
-  display: flex;
-  gap: 60px;
+.advantages {
+  &__img {
+  }
+  &__title {
+  }
+  &__container {
+    max-width: 1300px;
+    padding-inline: 10px;
+    margin-inline: auto;
+  }
+  &__item {
+  }
 }
-
-@media (max-width: 1023px) {
-  .call__row {
-    flex-direction: column-reverse;
+.title-isf {
+}
+.advantages {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  position: relative;
+  z-index: 1;
+  @media (max-width: 767px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &:before {
+    content: url(/public/images/text-pattern.svg);
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: -1;
+  }
+  &__row {
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    color: #da3849;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin-inline: auto;
+  }
+}
+.item-advantages {
+  background-color: #3250a5;
+  border-radius: 27px;
+  flex: 0 0 25%;
+  &__img {
+    border-radius: 27px;
+    min-width: 320px;
+    height: 342px;
+    margin-bottom: 16px;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 16px;
+    padding-inline: 20px;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding-inline: 30px;
+    margin-bottom: 16px;
   }
 }
 
-.call__info {
-  color: #3250a5;
-  font-size: 16px;
-}
-
-.call__info p b {
-  font-weight: 700;
-}
-
-.text-block {
-  max-width: 735px;
-}
-
-.text-block p:first-child {
-  margin-bottom: 30px;
-}
-
-.text-block p:not(:first-child) {
-  margin-bottom: 10px;
-}
-
-.call__image {
-  padding: 12px;
-  overflow: hidden;
-  background-image: url(/images/about-img-bg.svg);
+.paid {
+  background-color: #ebf0ff;
+  background-image: url(/public/images/pediatr-bg.svg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  &__container {
+    max-width: 1260px;
+    padding-inline: 10px;
+    margin-inline: auto;
+  }
+  &__title {
+    max-width: 700px;
+    margin-inline: auto;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 700;
+  }
 }
-
-.call__image img {
-  border-radius: 50%;
+.title-isf {
 }
