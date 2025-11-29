@@ -252,3 +252,52 @@ a {
 }
 .title-isf {
 }
+
+.call {
+  background-color: #ebf0ff;
+  background-image: url(/public/images/pediatr-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-block: 50px;
+  &__title {
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: 25px;
+  }
+  &__container {
+    max-width: 1235px;
+    margin-inline: auto;
+    padding-inline: 10px;
+  }
+  &__row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    margin-bottom: 35px;
+  }
+  &__item {
+    flex: 0 1 25%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
+    height: 150px;
+  }
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+.title-isf {
+}
+.item-call {
+  &__icon {
+  }
+  &__text {
+  }
+}
