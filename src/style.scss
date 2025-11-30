@@ -79,6 +79,9 @@ a {
   background-position: center;
   padding-top: 40px;
   padding-bottom: 70px;
+  @media (max-width: 1023px) {
+    padding-block: 30px;
+  }
   &__container {
     max-width: 1225px;
     padding-inline: 10px;
@@ -87,6 +90,10 @@ a {
   &__title {
     max-width: 550px;
     margin-inline: auto;
+    margin-bottom: 30px;
+    @media (max-width: 1023px) {
+      margin-bottom: 20px;
+    }
   }
   &__row {
     display: flex;
@@ -94,6 +101,7 @@ a {
     gap: 40px;
     @media (max-width: 1023px) {
       flex-direction: column;
+      gap: 20px;
     }
   }
   &__img {
@@ -101,12 +109,16 @@ a {
     background-image: url(/images/about-img-bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
-
     img {
       min-width: 374px;
       width: 374px;
       height: 374px;
       border-radius: 50%;
+      @media (max-width: 1023px) {
+        min-width: 300px;
+        width: 300px;
+        height: 300px;
+      }
       @media (max-width: 767px) {
         min-width: 250px;
         width: 250px;
@@ -129,47 +141,34 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   color: #3250a5;
-  margin-bottom: 26px;
   line-height: 48px;
   text-align: center;
   background-image: url(/images/title-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  padding-top: 30px;
-  padding-bottom: 10px;
-  margin-bottom: 70px;
+
+  @media (max-width: 1023px) {
+    font-size: 32px;
+    line-height: 36px;
+  }
   @media (max-width: 767px) {
     font-size: 26px;
-    margin-bottom: 40px;
   }
 }
 .circle-img-isf {
 }
 
 .advantages {
-  &__img {
-  }
-  &__title {
-  }
-  &__container {
-    max-width: 1300px;
-    padding-inline: 10px;
-    margin-inline: auto;
-  }
-  &__item {
-  }
-}
-.title-isf {
-}
-.advantages {
   padding-top: 100px;
   padding-bottom: 120px;
   position: relative;
   z-index: 1;
+  @media (max-width: 1023px) {
+    padding-block: 60px;
+  }
   @media (max-width: 767px) {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-block: 40px;
   }
   &:before {
     content: url(/public/images/text-pattern.svg);
@@ -178,12 +177,26 @@ a {
     right: 0px;
     z-index: -1;
   }
+  &__container {
+    max-width: 1300px;
+    padding-inline: 10px;
+    margin-inline: auto;
+  }
   &__row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
     margin-bottom: 30px;
+    @media (max-width: 767px) {
+      gap: 20px;
+    }
+  }
+  &__title {
+    margin-bottom: 50px;
+    @media (max-width: 767px) {
+      margin-bottom: 25px;
+    }
   }
   &__subtitle {
     color: #da3849;
@@ -198,12 +211,22 @@ a {
 .item-advantages {
   background-color: #3250a5;
   border-radius: 27px;
-  flex: 0 0 25%;
+  flex: 0 1 25%;
+  @media (max-width: 767px) {
+    flex: 0 1 50%
+  }
   &__img {
     border-radius: 27px;
+    width: 100%;
     min-width: 320px;
     height: 342px;
     margin-bottom: 16px;
+    @media (max-width: 1023px) {
+      height: 300px;
+    }
+    @media (max-width: 767px) {
+      min-width: 300px;
+    }
   }
   &__title {
     font-size: 20px;
@@ -276,16 +299,21 @@ a {
     flex-wrap: wrap;
     gap: 70px;
     margin-bottom: 35px;
+    @media (max-width: 1023px) {
+      gap: 35px;
+    }
   }
   &__item {
-    flex: 0 1 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    background-color: #fff;
-    border-radius: 15px;
-    padding: 20px;
     gap: 20px;
-    height: 150px;
+    max-width: 350px;
+    width: 350px;
+    height: 140px;
   }
   &__text {
     &:not(:last-child) {
@@ -300,4 +328,10 @@ a {
   }
   &__text {
   }
+}
+
+.some {
+  width: 2000px;
+  height: 20px;
+  background-color: #3250a5;
 }
